@@ -14,7 +14,7 @@ import Notifications from './pages/Notifications';
 import { RecurringTransactions } from './pages/RecurringTransactions';
 import AIRecommendations from './pages/AIRecommendations';
 import UserPreferences from './pages/UserPreferences';
-import BankIntegration from './pages/BankIntegration';
+import EWalletIntegration from './pages/EWalletIntegration';
 import PaymentGateway from './pages/PaymentGateway';
 import DataImportExport from './pages/DataImportExport';
 import ExternalServices from './pages/ExternalServices';
@@ -66,11 +66,6 @@ const AppRoutes: React.FC = () => {
                   <Goals />
                 </ProtectedRoute>
               } />
-              <Route path="/recurring-transactions" element={
-                <ProtectedRoute>
-                  <RecurringTransactions />
-                </ProtectedRoute>
-              } />
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/notifications" element={
                 <ProtectedRoute>
@@ -92,9 +87,9 @@ const AppRoutes: React.FC = () => {
                   <UserPreferences />
                 </ProtectedRoute>
               } />
-              <Route path="/bank-integration" element={
+              <Route path="/e-wallet-integration" element={
                 <ProtectedRoute>
-                  <BankIntegration />
+                  <EWalletIntegration />
                 </ProtectedRoute>
               } />
               <Route path="/payment-gateway" element={

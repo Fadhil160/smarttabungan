@@ -41,7 +41,7 @@ const GoalProgress: React.FC = () => {
                     <Target size={16} className="text-neutral-600" />
                   </div>
                   <div>
-                    <p className="font-medium text-neutral-800">{goal.name || goal.title}</p>
+                    <p className="font-medium text-neutral-800">{goal.name}</p>
                     <p className="text-sm text-neutral-500">
                       {formatCurrency(goal.currentAmount)} dari {formatCurrency(goal.targetAmount)}
                     </p>

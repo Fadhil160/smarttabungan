@@ -457,3 +457,5 @@ const EWalletIntegration: React.FC = () => {
     </div>
   );
 };
+
+export default EWalletIntegration;

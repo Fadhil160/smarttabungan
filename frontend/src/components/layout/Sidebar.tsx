@@ -31,14 +31,13 @@ const Sidebar: React.FC = () => {
   const menuItems = [
     { icon: LayoutDashboard, label: 'Dashboard', path: '/dashboard' },
     { icon: CreditCard, label: 'Transaksi', path: '/transactions' },
-    { icon: Repeat, label: 'Transaksi Berulang', path: '/recurring-transactions' },
     { icon: PiggyBank, label: 'Anggaran', path: '/budgets' },
     { icon: Users, label: 'Group Budget', path: '/group-budgets' },
     { icon: Target, label: 'Tujuan Keuangan', path: '/goals' },
     { icon: TrendingUp, label: 'Analisis', path: '/analytics' },
     { icon: MessageCircle, label: 'Chat AI', path: '/chatbot' },
     { icon: Lightbulb, label: 'AI Recommendations', path: '/ai-recommendations' },
-    { icon: Building2, label: 'Bank Integration', path: '/bank-integration' },
+    { icon: CreditCard, label: 'E-Wallet Integration', path: '/e-wallet-integration' },
   ];
 
   const handleLogout = () => {
