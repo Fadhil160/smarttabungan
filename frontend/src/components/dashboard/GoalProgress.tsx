@@ -1,9 +1,11 @@
 import React from 'react';
 import { Target, TrendingUp } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { useApp } from '../../contexts/AppContext';
 
 const GoalProgress: React.FC = () => {
   const { goals } = useApp();
+  const navigate = useNavigate();
 
   const formatCurrency = (amount: number) => {
     return new Intl.NumberFormat('id-ID', {
@@ -20,7 +22,10 @@ const GoalProgress: React.FC = () => {
         <h3 className="text-lg font-semibold text-neutral-800 font-inter">
           Progress Tujuan Keuangan
         </h3>
-        <button className="text-primary-500 hover:text-primary-600 text-sm font-medium">
+        <button
+          className="text-primary-500 hover:text-primary-600 text-sm font-medium"
+          onClick={() => navigate('/goals')}
+        >
           Kelola
         </button>
       </div>

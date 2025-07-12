@@ -190,25 +190,6 @@ const SpendingInsights: React.FC = () => {
           );
         })}
       </div>
-
-      {/* Quick Actions */}
-      <div className="mt-6 pt-4 border-t border-neutral-200">
-        <h4 className="font-semibold text-neutral-800 mb-3">Aksi Cepat</h4>
-        <div className="grid grid-cols-2 gap-2">
-          <button
-            onClick={() => window.location.href = '/transactions'}
-            className="p-2 text-xs bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition-colors"
-          >
-            Lihat Transaksi
-          </button>
-          <button
-            onClick={() => window.location.href = '/budgets'}
-            className="p-2 text-xs bg-green-50 text-green-700 rounded-lg hover:bg-green-100 transition-colors"
-          >
-            Atur Budget
-          </button>
-        </div>
-      </div>
     </div>
   );
 };

@@ -253,7 +253,6 @@ const Dashboard: React.FC = () => {
           <ExpenseChart />
           <AnalyticsSummary />
           <SpendingInsights />
-          <AdvancedCharts />
           <MonthlyComparison />
           <AIDashboard />
         </div>
